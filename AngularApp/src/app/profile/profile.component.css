@@ -1,0 +1,25 @@
+/* custom-context-menu.component.css */
+.custom-cursor {
+    cursor: text !important; /* Change to your desired cursor type */
+}
+
+.context-menu {
+    display: block;
+    position: absolute;
+    background: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.context-menu a {
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+    color: #333;
+}
+
+.context-menu a:hover {
+    background: #c6c6c6;
+
+}

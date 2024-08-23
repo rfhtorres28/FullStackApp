@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\bobby\\Desktop\\AngularAppSSR\\MvcApp\\MvcApp.csproj": {}
+    "C:\\Users\\ITuser\\Desktop\\FullStackApp\\MvcApp\\MvcApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\bobby\\Desktop\\AngularAppSSR\\MvcApp\\MvcApp.csproj": {
+    "C:\\Users\\ITuser\\Desktop\\FullStackApp\\MvcApp\\MvcApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bobby\\Desktop\\AngularAppSSR\\MvcApp\\MvcApp.csproj",
+        "projectUniqueName": "C:\\Users\\ITuser\\Desktop\\FullStackApp\\MvcApp\\MvcApp.csproj",
         "projectName": "MvcApp",
-        "projectPath": "C:\\Users\\bobby\\Desktop\\AngularAppSSR\\MvcApp\\MvcApp.csproj",
-        "packagesPath": "C:\\Users\\bobby\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bobby\\Desktop\\AngularAppSSR\\MvcApp\\obj\\",
+        "projectPath": "C:\\Users\\ITuser\\Desktop\\FullStackApp\\MvcApp\\MvcApp.csproj",
+        "packagesPath": "C:\\Users\\ITuser\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ITuser\\Desktop\\FullStackApp\\MvcApp\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\bobby\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ITuser\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -59,9 +64,15 @@
             },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
-              "version": "[8.0.7, )"
+              "version": "[8.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.8, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[8.0.8, )"
             },
@@ -71,7 +82,7 @@
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[6.4.0, )"
+              "version": "[6.7.1, )"
             }
           },
           "imports": [
@@ -93,7 +104,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

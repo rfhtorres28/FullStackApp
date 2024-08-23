@@ -1,1 +1,9 @@
-<p>profile works!</p>
+<!-- custom-context-menu.component.html -->
+<input type="text" class="custom-cursor" (contextmenu)="showContextMenu($event)" placeholder="Right-click here">
+
+<!-- the ngStyle directives is use to set the css properties of an HTML element -->
+<div class="context-menu" *ngIf="isContextMenuVisible" [ngStyle]="{left: contextMenuPosition.x + 'px', top: contextMenuPosition.y + 'px' }"> 
+    <a href="#" (click)="optionClicked('Option 1')">Option 1</a>
+    <a href="#" (click)="optionClicked('Option 2')">Option 2</a>
+    <a href="#" (click)="optionClicked('Option 3')">Option 3</a>
+</div>
