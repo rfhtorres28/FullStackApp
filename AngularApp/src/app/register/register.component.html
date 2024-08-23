@@ -1,0 +1,23 @@
+<form [formGroup]="registerForm" (ngSubmit)="onSubmit()"> 
+      <div class="main-container">
+        <div class="register-form">
+            <img src="../assets/logo.png" alt="Logo">
+            <h5>Register Form</h5>
+         <div class="mb-3">
+             <input class="form-control" type="text" formControlName = "username" placeholder="Enter your username" aria-label="default input example">
+         </div>
+         <div class="mb-3">
+             <input type="email" class="form-control" formControlName = "email"  placeholder="Enter your email">
+         </div>
+         <div class="mb-3">
+             <input class="form-control" type="password" formControlName = "password"  placeholder="Enter your password" aria-label="default input example">
+         </div>
+         <div class="mb-3">
+             <input class="form-control" type="password" formControlName = "confirmPassword" placeholder="Confirm your password" aria-label="default input example">
+         </div>
+         <button type="submit" class="btn btn-primary mb-3">Submit</button>
+        </div>
+      </div>
+      
+
+</form>

@@ -1,0 +1,34 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  height: 500px;
+  width: 450px;
+  border-radius: 5%;
+}
+
+.register-form {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+}
+
+.form-control {
+ width: 330px;
+
+}
+.btn {
+ width: 330px !important;
+}
+
+img {
+  margin-top: -10%;
+  height: 240px;
+  width: 240px;
+}
+h5 {
+  margin-top: -10%;
+}
