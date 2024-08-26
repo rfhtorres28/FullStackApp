@@ -243,6 +243,109 @@ namespace MvcApp.Migrations
                     b.ToTable("AspNetUsers", (string)null);
                 });
 
+            modelBuilder.Entity("Ronnier.AmazonProduct.Models.AmazonProducts", b =>
+                {
+                    b.Property<byte>("column1")
+                        .HasColumnType("tinyint")
+                        .HasColumnName("column1");
+
+                    b.Property<string>("asin")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(50)")
+                        .HasColumnName("asin");
+
+                    b.Property<bool>("climate_pledge_friendly")
+                        .HasColumnType("bit")
+                        .HasColumnName("climate_pledge_friendly");
+
+                    b.Property<string>("currency")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(50)")
+                        .HasColumnName("currency");
+
+                    b.Property<string>("delivery")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(150)")
+                        .HasColumnName("delivery");
+
+                    b.Property<bool>("has_variations")
+                        .HasColumnType("bit")
+                        .HasColumnName("has_variations");
+
+                    b.Property<bool>("is_amazon_choice")
+                        .HasColumnType("bit")
+                        .HasColumnName("is_amazon_choice");
+
+                    b.Property<bool>("is_best_seller")
+                        .HasColumnType("bit")
+                        .HasColumnName("is_best_seller");
+
+                    b.Property<bool>("is_prime")
+                        .HasColumnType("bit")
+                        .HasColumnName("is_prime");
+
+                    b.Property<string>("product_availability")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(50)")
+                        .HasColumnName("product_availability");
+
+                    b.Property<decimal>("product_minimum_offer_price")
+                        .HasColumnType("money")
+                        .HasColumnName("product_minimum_offer_price");
+
+                    b.Property<byte>("product_num_offers")
+                        .HasColumnType("tinyint")
+                        .HasColumnName("product_num_offers");
+
+                    b.Property<int>("product_num_ratings")
+                        .HasColumnType("int")
+                        .HasColumnName("product_num_ratings");
+
+                    b.Property<decimal>("product_original_price")
+                        .HasColumnType("money")
+                        .HasColumnName("product_original_price");
+
+                    b.Property<string>("product_photo")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(100)")
+                        .HasColumnName("product_photo");
+
+                    b.Property<decimal>("product_price")
+                        .HasColumnType("money")
+                        .HasColumnName("product_price");
+
+                    b.Property<double>("product_star_rating")
+                        .HasColumnType("float")
+                        .HasColumnName("product_star_rating");
+
+                    b.Property<string>("product_title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(250)")
+                        .HasColumnName("product_title");
+
+                    b.Property<string>("product_url")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(50)")
+                        .HasColumnName("product_url");
+
+                    b.Property<string>("sales_volume")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(50)")
+                        .HasColumnName("sales_volume");
+
+                    b.Property<double>("unit_count")
+                        .HasColumnType("float")
+                        .HasColumnName("unit_count");
+
+                    b.Property<decimal>("unit_price")
+                        .HasColumnType("money")
+                        .HasColumnName("unit_price");
+
+                    b.HasKey("column1");
+
+                    b.ToTable("amazon_product", (string)null);
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)

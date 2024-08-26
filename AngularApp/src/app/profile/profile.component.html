@@ -1,9 +1,68 @@
-<!-- custom-context-menu.component.html -->
-<input type="text" class="custom-cursor" (contextmenu)="showContextMenu($event)" placeholder="Right-click here">
 
-<!-- the ngStyle directives is use to set the css properties of an HTML element -->
-<div class="context-menu" *ngIf="isContextMenuVisible" [ngStyle]="{left: contextMenuPosition.x + 'px', top: contextMenuPosition.y + 'px' }"> 
-    <a href="#" (click)="optionClicked('Option 1')">Option 1</a>
-    <a href="#" (click)="optionClicked('Option 2')">Option 2</a>
-    <a href="#" (click)="optionClicked('Option 3')">Option 3</a>
+
+<div class="main-container">
+  <h1>Amazon Product</h1>
+  <div class="container-1">
+    <div class="scrollable-content">
+      <!-- <div class ="scrollable-content-2"> -->
+      <table>
+        <thead>
+            <tr>
+              <th [style.min-width]="column_width">Column</th>
+              <th [style.min-width]="asin_width">Asin</th>
+              <th [style.min-width]="product_title">Product Title</th>
+              <th [style.min-width]="product_price">Product Price</th>
+              <th [style.min-width]="product_original_price_width">Product Original Price</th>
+              <th [style.min-width]="currency_width">Currency</th>
+              <th [style.min-width]="product_star_rating_width">Product Star Rating</th>
+              <th [style.min-width]="product_num_rating_width">Product Num Rating</th>
+              <th [style.min-width]="product_url_width">Product Url</th>
+              <th [style.min-width]="product_photo_width">Product Photo</th>
+              <th [style.min-width]="product_num_offers_width">Product Num Offers</th>
+              <th [style.min-width]="product_min_offer_price_width">Product Minimum Offer Price</th>
+              <th [style.min-width]="is_best_sellers_width">is Best Sellers</th>
+              <th [style.min-width]="is_amazon_choice_width">is amazon Choice</th>
+              <th [style.min-width]="is_prime_width">is Prime</th>
+              <th [style.min-width]="climate_pledge_friendly_width">Climate Pledge Friendly</th>
+              <th [style.min-width]="sales_volume_width">Sales Volume</th>
+              <th [style.min-width]="delivery_width">Delivery</th>
+              <th [style.min-width]="has_variations_width">has Variations</th>
+              <th [style.min-width]="product_availability_width">Product Availability</th>
+              <th [style.min-width]="unit_price_width">Unit Price</th>
+              <th [style.min-width]="unit_count_width">Unit Count</th>
+            </tr>
+        </thead>
+        <tbody>
+             <tr *ngFor="let row of productsales">
+              <td>{{ row.column1 }}</td>
+              <td>{{ row.asin }}</td>
+              <td>{{ row.product_title }}</td>
+              <td>{{ row.product_price }}</td>
+              <td>{{ row.product_original_price }}</td>
+              <td>{{ row.product_title }}</td>
+              <td>{{ row.currency }}</td>
+              <td>{{ row.product_star_rating }}</td>
+              <td>{{ row.product_num_ratings }}</td>
+              <td>{{ row.product_url }}</td>
+              <td>{{ row.product_photo }}</td>
+              <td>{{ row.product_num_offers }}</td>
+              <td>{{ row.product_minimum_offer_price }}</td>
+              <td>{{ row.is_amazon_choice }}</td>
+              <td>{{ row.is_prime }}</td>
+              <td>{{ row.climate_pledge_friendly }}</td>
+              <td>{{ row.sales_volume }}</td>
+              <td>{{ row.delivery }}</td>
+              <td>{{ row.has_variations }}</td>
+              <td>{{ row.product_availability }}</td>
+              <td>{{ row.unit_price }}</td>
+              <td>{{ row.unit_count }}</td>
+             </tr>
+        </tbody>
+      </table>
+    </div>
+    <!-- </div> -->
+
+      <button type="submit" class="btn btn-primary mb-3" (click)="onSubmit()">Load</button>
+ 
+  </div>
 </div>

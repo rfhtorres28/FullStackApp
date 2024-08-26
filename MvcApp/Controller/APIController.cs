@@ -91,9 +91,6 @@ namespace MvcApp.Controller {
 
      }
 
- 
-
-
 
      [HttpPost("logout")]
      public async Task<IActionResult> Logout() {
@@ -105,6 +102,11 @@ namespace MvcApp.Controller {
        return Ok(new {message="User Successfully logout"}); 
 
      }
+
+     
+
+
+
 
     
  

@@ -1,25 +1,73 @@
-/* custom-context-menu.component.css */
-.custom-cursor {
-    cursor: text !important; /* Change to your desired cursor type */
+
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+  text-align: center;
+  gap: 3%;
+  padding-top: 3%;
+  padding-left: 0;
 }
 
-.context-menu {
-    display: block;
-    position: absolute;
-    background: #fff;
-    border: 1px solid #ccc;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    z-index: 1000;
+.container-1 {
+  display:flex;
+  flex-direction: column;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  align-items: center;
+  justify-content: center;
+  height: 450px;
+  width: 100%;
+  gap: 30px;
 }
 
-.context-menu a {
-    display: block;
-    padding: 8px;
-    text-decoration: none;
-    color: #333;
+
+
+.scrollable-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  height: 400px;
+  width: 100%;
+  overflow-y: auto;
+  padding-right: 15px;
+  position: relative;
 }
 
-.context-menu a:hover {
-    background: #c6c6c6;
+table {
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  border-collapse: collapse; 
+  table-layout: fixed;
+  max-width: 100%; 
+  max-height: 100%;
+}
+thead {
+  background-color: rgb(199, 199, 199);
+  position: sticky;
+  top: 0;
+}
+th, td {
+  text-align: center;
+  vertical-align: middle;
+  padding: 8px;
+  font-size: 10px;
+  font-weight: normal;
+  min-width: 130px;
+  border: 1px solid black;
 
 }
+
+.scrollable-content-2  {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  height: 300px;
+  width: 400px; 
+  
+}
+

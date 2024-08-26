@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using MvcApp.Models;
+using Ronnier.AmazonProduct.Models; 
 
 namespace MvcApp.Data {
     
@@ -10,13 +11,14 @@ namespace MvcApp.Data {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options): base(options) {}
 
         public DbSet<UserDetails> UserDetails { get; set; }
+        public DbSet<AmazonProducts> AmazonProducts { get; set; } // DbSet<Entity Type> represents a table in the database, it allows CRUD operations in that table
 
         protected override void OnModelCreating(ModelBuilder modelBuilder) {
             
 
             base.OnModelCreating(modelBuilder);
 
-             modelBuilder.Entity<UserDetails>(entity =>{
+            modelBuilder.Entity<UserDetails>(entity =>{
     
                   entity.Property(e => e.ContactNumber).HasColumnName("ContactNumber");
                   entity.Property(e => e.BirthDate).HasColumnName("BirthDate");
@@ -24,6 +26,10 @@ namespace MvcApp.Data {
                   entity.Property(e => e.InstagramLink).HasColumnName("InstagramLink");
                   entity.Property(e => e.LastLogin ).HasColumnName("LastLogin");
                 });
+
+            
+            modelBuilder.Entity<AmazonProducts>().ToTable("amazon_product");
+
 
         }
     }
